@@ -5,3 +5,10 @@ bytes_string = bytes.fromhex(hex_string)
 
 base64_string = base64.b64encode(bytes_string)
 print(base64_string)
+
+# # encoding
+# test = "test123 test456"
+# encoded = base64.b64encode(test.encode()).decode()
+# print(encoded)
+# decoded = base64.b64decode(encoded).decode()
+# print(decoded)

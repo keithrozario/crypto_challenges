@@ -1,14 +1,5 @@
-cipher_text= "MKTKXGR XOJK IAXOUAY XOJK"
 
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
-for offset in range(1,25):
-    new_sentence = ""
-    for char in cipher_text.upper():
-        position = alphabet.find(char)
-        if position > -1:
-            new_char = alphabet[position+offset]
-        else:
-            # usually a space or comma
-            new_char = char
-        new_sentence = new_sentence + new_char
-    print(new_sentence)
+ords = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
+
+print("Here is your flag:")
+print("".join(chr(o) for o in ords))
